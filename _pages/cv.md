@@ -7,4 +7,6 @@ redirect_from:
   - /resume
 ---
 
-<iframe src="CV.pdf" width="100%" height="600px"></iframe>
+<object data="CV.pdf" type="application/pdf" width="100%" height="600px">
+    <p>PDF cannot be displayed. <a href="CV.pdf">Download here</a>.</p>
+</object>
