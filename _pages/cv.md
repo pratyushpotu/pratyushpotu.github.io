@@ -8,5 +8,5 @@ redirect_from:
 ---
 
 <object data="CV.pdf" type="application/pdf" width="100%" height="600px">
-    <p>PDF cannot be displayed. <a href="https://github.com/pratyushpotu/pratyushpotu.github.io/edit/master/_pages/CV.pdf">Download here</a>.</p>
+    <p>PDF cannot be displayed. <a href="https://github.com/pratyushpotu/pratyushpotu.github.io/blob/master/_pages/CV.pdf">Download here</a>.</p>
 </object>
