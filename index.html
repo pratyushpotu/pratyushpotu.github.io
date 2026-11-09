@@ -1,150 +1,220 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            ol li {
-                padding: 4px 0px;
-            }
-            ul li {
-                padding: 4px 0px;
-            }
-        </style>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pratyush Potu</title>
+  <meta name="description" content="Pratyush Potu is a Ph.D. candidate in Applied Mathematics at Brown University working on numerical methods for partial differential equations.">
+  <link rel="canonical" href="https://pratyushpotu.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/stix-two-text-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    /* apply the remembered light/dark choice before the page is drawn (see theme.js) */
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js" defer></script>
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Pratyush Potu">
+  <meta property="og:description" content="Ph.D. candidate in Applied Mathematics at Brown University, working on numerical methods for partial differential equations.">
+  <meta property="og:url" content="https://pratyushpotu.github.io/">
+  <meta property="og:image" content="https://pratyushpotu.github.io/profile_picture.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pratyush Potu",
+    "url": "https://pratyushpotu.github.io/",
+    "image": "https://pratyushpotu.github.io/profile_picture.jpg",
+    "jobTitle": "Ph.D. candidate in Applied Mathematics",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Brown University" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "The University of Texas at Austin" },
+    "sameAs": ["https://scholar.google.com/citations?user=nF8hFPAAAAAJ"]
+  }
+  </script>
+</head>
 <body>
-<img src="profile_picture.jpg" align="right" border="0"
-        height="275">
-<h1>Pratyush Potu</h1>
-<p>
-    Department of Applied Mathematics, Brown University
-</p>
-<p>
-    Email: pratyush_potu [at] brown [dot] edu
-</p>
+<a class="skip" href="#main">Skip to content</a>
 
-<p>I am a fifth year graduate student at Brown University, advised
-    by <a href="https://appliedmath.brown.edu/people/johnny-guzman">Johnny Guzm&aacute;n</a>.
-</p>
-<p>
-    I work on numerical methods for partial differential equations.
-</p>
-<p>
-    Here is my <a href="CV.pdf">CV</a> (updated May 2026) and <a href="https://scholar.google.com/citations?user=nF8hFPAAAAAJ&hl=en">Google Scholar</a>.
-</p>
-<p>
-    I am grateful to be supported by the Center for Information Geometric Mechanics and Optimization (<a href="https://cigmo.github.io/">CIGMO</a>).
-</p>
-<br>
+<div class="wrap">
 
-<ul>
-<br>
-<details>
-    <summary><b style="font-size: larger">Publications and preprints</b></summary>
-    <ol>
-        <li>A. Ern, J. Guzm&aacute;n, PP and M. Vohral&iacute;k,
-        <font color=#0000FF>
-        Discrete Poincar&eacute; inequalities: a review on proofs, equivalent formulations, and behavior of constants,
-        </font>
-        <em>IMA J. Numer. Anal.,</em> (2026)
-        [<a href="https://arxiv.org/abs/2412.11796">arXiv</a>]
-        [<a href="https://doi.org/10.1093/imanum/draf089">doi</a>]
-        </li>
-        <li>A. Ern, J. Guzm&aacute;n, PP and M. Vohral&iacute;k,
-        <font color=#0000FF>
-        Local <i>L</i><sup>2</sup>-bounded commuting projections using discrete local problems on Alfeld splits
-        </font>
-        <em>Found. Comput. Math.,</em> to appear (2026)
-        [<a href="https://arxiv.org/abs/2502.03601">arXiv</a>]
-        </li>
-        <li>J. Guzm&aacute;n and PP,
-        <font color=#0000FF>
-        A framework for analysis of DEC approximations to Hodge-Laplacian problems using generalized Whitney forms
-        </font>
-        <em>Math. Comp.,</em> (2026)
-        [<a href="https://arxiv.org/abs/2505.08934">arXiv</a>]
-        [<a href="https://doi.org/10.1090/mcom/4245">doi</a>]
-        </li>
-        <li>J. Guzm&aacute;n, A. N. Hirani, B. Liu, and PP,
-        <font color=#0000FF>
-        Discrete Poincare and Bogovskii operators on cochains and Whitney forms
-        </font>
-        [<a href="https://arxiv.org/abs/2603.29018">arXiv</a>]
-        </li>
-        <li>A. Ern, J. Guzm&aacute;n, and PP,
-        <font color=#0000FF>
-        Bounded, commuting, discrete-trace preserving projections
-        </font>
-        [<a href="https://arxiv.org/abs/2604.28103">arXiv</a>]
-        </li>
-    </ol>
-</details>
-<br>
+  <header class="site-header grid">
+    <div class="header-bar">
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Papers</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="CV.pdf">CV</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.2v2.2M12 19.6v2.2M2.2 12h2.2M19.6 12h2.2M5.1 5.1l1.6 1.6M17.3 17.3l1.6 1.6M5.1 18.9l1.6-1.6M17.3 6.7l1.6-1.6"/></svg>
+      </button>
+    </div>
+  </header>
 
-<details>
-    <summary><b style="font-size: larger">Talks</b></summary>
-    <ul>
-        <li>
-            Workshop on Discretization of Differential Complexes, Erwin Schrödinger Institute, Vienna, Austria, May 2026
-        </li>
-        <li>
-            Finite Element Circus, Tufts University, Medford, MA, Apr. 2026
-        </li>
-        <li>
-            AMS Spring Eastern Sectional Meeting, Boston College, Chestnut Hill, MA, Mar. 2026
-        </li>
-        <li>
-            Finite Element Circus, George Mason University, Arlington, VA, Oct 2025
-        </li>
-        <li>
-            IMSI Workshop on Discrete Exterior Calculus (Poster), Chicago, IL, Sep. 2025 
-        </li>
-        <li>
-            SIAM Conference on Computational Science and Engineering (CSE25), Fort Worth, TX, Mar. 2025
-        </li>
-        <li>
-           AMS Spring Eastern Sectional Meeting, Hartford, CT, Apr. 2025
-        </li>
-        <li>
-            Finite Element Circus, Oakland University, Rochester, MI, Apr. 2025
-        </li>
-    </ul>
-    <br>
-</details>
-<br>
+  <main id="main">
 
-<details>
-    <summary><b style="font-size: larger">Teaching</b></summary>
-    <h3>Brown University</h3>
+    <section class="hero grid" aria-label="About">
+      <div class="margin portrait">
+        <img src="profile_picture.jpg" alt="Portrait of Pratyush Potu" width="333" height="500">
+      </div>
 
-    <ul>
-        <li>
-            APMA 1650 - Statistical Inference 1, Fall 2023
-        </li>
-        <li>
-            APMA 0360 - Applied Partial Differential Equations, Spring 2024
-        </li>
-    </ul>
-        
-        <h3>Brown University Directed Reading Program</h3>
-    
-    <ul>
-        <li>
-            Calculus of Variations, Fall, Spring 2024
-        </li>
-        <li>
-            Numerical Linear Algebra, Fall 2024
-        </li>
-        <li>
-            Spectral Graph Theory, Spring 2025
-        </li>
-        <li>
-            Spline Theory, Fall 2025
-        </li>
-        <li>
-            Numerical Methods for Differential Equations, Fall 2025
-        </li>
-    </ul>
-</details>
-<br>
+      <div class="body intro-head">
+        <h1>Pratyush Potu</h1>
+        <!-- <p class="role">Ph.D. candidate in Applied Mathematics at Brown University</p> -->
+      </div>
 
+      <div class="body intro-text">
+        <p>I am a fifth-year Ph.D. student in the Division of Applied Mathematics at Brown University, advised by <a href="https://appliedmath.brown.edu/people/johnny-guzman">Johnny Guzm&aacute;n</a>. </p>
+          
+        <p>I am broadly interested in numerical methods for partial differential equations. During my Ph.D., I have explored how ideas from topology, geometry, and combinatorics can be used in the development and analysis of these methods.</p>
+        <p>Before Brown, I received a B.Sc. in Mathematics from the University of Texas at Austin, with a certificate in Scientific Computation and Data Science. I am grateful to be currently supported by the Center for Information Geometric Mechanics and Optimization (<a href="https://cigmo.github.io/">CIGMO</a>).</p>
+
+        <dl class="contact">
+          <dt>Email</dt>
+          <dd>pratyush_potu [at] brown [dot] edu</dd>
+          <dt>Address</dt>
+          <dd>Division of Applied Mathematics, Brown University, Providence, RI 02912</dd>
+          <dt>Links</dt>
+          <dd class="inline-links"><a href="CV.pdf">CV (PDF)</a> <a href="https://scholar.google.com/citations?user=nF8hFPAAAAAJ&amp;hl=en">Google Scholar</a> <a href="https://arxiv.org/search/?query=Potu%2C+Pratyush&amp;searchtype=author">arXiv</a></dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section grid" aria-labelledby="h-research">
+      <h2 id="h-research">Research</h2>
+      <div class="body">
+        <p>My research concerns structure-preserving discretization of partial differential equations (PDE). The philosophy behind this research is that numerical methods should preserve key properties satisfied by solutions of the PDE being approximated. Methods built in this way are generally stable and avoid spurious, unphysical solutions.</p>
+
+        <p class="more"><a href="research.html">More about my research</a></p>
+      </div>
+    </section>
+
+    <section class="section grid news-section" aria-labelledby="h-news">
+      <h2 id="h-news">News</h2>
+      <div class="body">
+        <!-- Newest first. To add an item, copy a line and change the date and the text.
+             Items dated after today are marked "(upcoming)" automatically by the script
+             at the end of this page, and the mark disappears once that month has passed. -->
+        <ul class="plain dated news news-scroll" tabindex="0" aria-labelledby="h-news">
+          <li><time datetime="2027-05">May 2027</time><span class="news-text">Attending the workshop <a href="https://kaibohu.github.io/assets/pdf/geofem-workshop-2027.pdf"><i>Finite Element Tensor Calculus: Discrete Structures and Compatible Discretizations</i></a>, University of Oxford, UK</span></li>
+          <li><time datetime="2027-02">Feb 2027</time><span class="news-text">Talk at the <a href="https://www.siam.org/conferences-events/siam-conferences/cse27/">SIAM Conference on Computational Science and Engineering (CSE27)</a>, Pittsburgh, PA</span></li>
+          <li><time datetime="2026-10">Oct 2026</time><span class="news-text">Talk at the Finite Element Circus, University of Connecticut, Avery Point, Groton, CT</span></li>
+          <li><time datetime="2026-05">May 2026</time><span class="news-text">Talk at the Workshop on Discretization of Differential Complexes, Erwin Schr&ouml;dinger Institute, Vienna, Austria</span></li>
+          <li><time datetime="2026-04">Apr 2026</time><span class="news-text">Talk at the Finite Element Circus, Tufts University, Medford, MA</span></li>
+          <li><time datetime="2026-04">Apr 2026</time><span class="news-text">Attended the ICERM Workshop on Simulation-Based Optimization with Applications, Providence, RI</span></li>
+          <li><time datetime="2026-03">Mar 2026</time><span class="news-text">Talk at the AMS Spring Eastern Sectional Meeting, Boston College, Chestnut Hill, MA</span></li>
+          <li><time datetime="2025-10">Oct 2025</time><span class="news-text">Talk at the Finite Element Circus, George Mason University, Arlington, VA</span></li>
+          <li><time datetime="2025-09">Sep 2025</time><span class="news-text">Poster at the IMSI Workshop on Discrete Exterior Calculus, Chicago, IL</span></li>
+          <li><time datetime="2025-06">Jun 2025</time><span class="news-text">Presentation at the EMS School on Mathematical Modelling, Numerical Analysis and Scientific Computing, K&aacute;cov, Czech Republic</span></li>
+          <li><time datetime="2025-04">Apr 2025</time><span class="news-text">Talk at the AMS Spring Eastern Sectional Meeting, Hartford, CT</span></li>
+          <li><time datetime="2025-04">Apr 2025</time><span class="news-text">Talk at the Finite Element Circus, Oakland University, Rochester, MI</span></li>
+          <li><time datetime="2025-03">Mar 2025</time><span class="news-text">Talk at the SIAM Conference on Computational Science and Engineering (CSE25), Fort Worth, TX</span></li>
+          <li><time datetime="2024-04">Apr 2024</time><span class="news-text">Attended the Finite Element Circus, Brown University, Providence, RI</span></li>
+          <li><time datetime="2024">Spring 2024</time><span class="news-text">Participating in the ICERM Semester Program in Numerical PDEs, Providence, RI</span></li>
+          <li><time datetime="2023-03">Mar 2023</time><span class="news-text">Attended the Finite Element Circus, Bridgewater State University, Bridgewater, MA</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section grid pubs-section" aria-labelledby="h-papers">
+      <h2 id="h-papers">Publications and Preprints</h2>
+      <div class="body">
+        <ul class="plain pubs pubs-scroll" tabindex="0" aria-labelledby="h-papers">
+          <li>
+            <span class="pub-title">A framework for analysis of DEC approximations to Hodge-Laplacian problems using generalized Whitney forms</span>
+            <span class="pub-meta">With Johnny Guzm&aacute;n. <i>Mathematics of Computation</i>, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2505.08934">arXiv</a> <a href="https://doi.org/10.1090/mcom/4245">Journal</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Local <i>L</i><sup>2</sup>-bounded commuting projections using discrete local problems on Alfeld splits</span>
+            <span class="pub-meta">With Alexandre Ern, Johnny Guzm&aacute;n, and Martin Vohral&iacute;k. <i>Foundations of Computational Mathematics</i>, to appear</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2502.03601">arXiv</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Discrete Poincar&eacute; inequalities: a review on proofs, equivalent formulations, and behavior of constants</span>
+            <span class="pub-meta">With Alexandre Ern, Johnny Guzm&aacute;n, and Martin Vohral&iacute;k. <i>IMA Journal of Numerical Analysis</i>, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2412.11796">arXiv</a> <a href="https://doi.org/10.1093/imanum/draf089">Journal</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Discrete Poincar&eacute; and Bogovski&#301; operators on cochains and Whitney forms</span>
+            <span class="pub-meta">With Johnny Guzm&aacute;n, Anil N. Hirani, and Bingyan Liu. Preprint, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2603.29018">arXiv</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Bounded, commuting, discrete-trace preserving projections</span>
+            <span class="pub-meta">With Alexandre Ern and Johnny Guzm&aacute;n. Preprint, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2604.28103">arXiv</a></span>
+          </li>
+          <li>
+            <span class="pub-title">A symmetric counterexample to Strang&rsquo;s conjecture for bivariate <i>C</i><sup>1</sup> cubic splines on triangulations</span>
+            <span class="pub-meta">Preprint, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2610.08470">arXiv</a></span>
+          </li>
+          <li>
+            <span class="pub-title">Discrete Poincar&eacute; and Bogovski&#301; operators for higher order finite element de Rham complexes</span>
+            <span class="pub-meta">With Johnny Guzm&aacute;n and K. O. Tyssvang. Preprint, 2026</span>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2611.05698">arXiv</a></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section grid" aria-labelledby="h-teaching">
+      <h2 id="h-teaching">Teaching</h2>
+      <div class="body">
+        <p>I have been a teaching assistant at Brown for Statistical Inference I (Fall 2023) and Applied Partial Differential Equations I (Spring 2024). Through Brown&rsquo;s Directed Reading Program I have mentored seven undergraduates in semester-long reading projects, on various topics in Applied Mathematics.</p>
+        <p class="more"><a href="teaching.html">Teaching and mentoring</a></p>
+      </div>
+    </section>
+
+    <section class="section grid" aria-labelledby="h-service">
+      <h2 id="h-service">Service</h2>
+      <div class="body">
+        <ul class="plain roles">
+          <li>Brown SIAM Student Chapter (Executive member since 2023)</li>
+          <li>Organizer of the Brown Applied Math Graduate Student Seminar (since 2023)</li>
+          <li>Reviewer for the <i>IMA Journal of Numerical Analysis</i> and <i>Calcolo</i></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer grid">
+    <div class="body">
+      <p>Last updated November 2026</p>
+    </div>
+  </footer>
+
+</div>
+<script>
+  /* Marks news items dated in the future as "(upcoming)".
+     A date like 2027-02 counts as upcoming until the end of February 2027. */
+  (function () {
+    var now = new Date();
+    document.querySelectorAll('.news time[datetime]').forEach(function (t) {
+      var p = t.getAttribute('datetime').split('-').map(Number);
+      if (p.length < 2 || p.some(isNaN)) return;
+      var end = p.length > 2 ? new Date(p[0], p[1] - 1, p[2] + 1) : new Date(p[0], p[1], 1);
+      if (now >= end) return;
+      var item = t.closest('li');
+      item.classList.add('is-upcoming');
+      var mark = document.createElement('span');
+      mark.className = 'note';
+      mark.textContent = ' (upcoming)';
+      item.querySelector('.news-text').appendChild(mark);
+    });
+  })();
+</script>
 </body>
 </html>
